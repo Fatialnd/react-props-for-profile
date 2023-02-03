@@ -1,14 +1,14 @@
-export default function DescriptionCard(props) {
+export default function DescriptionCard({profession, awardsNum, awards, discovered}) {
     return (
       <ul>
         <li>
-          <b>Profession: </b> {props.profession}
+          <b>Profession: </b> {profession}
         </li>
         <li>
-          <b>Awards:</b> {props.awardsNum} {props.awards}
+          <b>Awards:</b> {awardsNum} {awards}
         </li>
         <li>
-          <b>Discovered: </b> {props.discovered}
+          <b>Discovered: </b> {discovered}
         </li>
       </ul>
     );
